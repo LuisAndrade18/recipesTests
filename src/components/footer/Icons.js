@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import * as S from './Style';
 import Insta from '../../assets/icons/instagramIcon.svg';
 import Twitter from '../../assets/icons/twitterIcon.svg';
@@ -8,12 +8,20 @@ import Pint from '../../assets/icons/pinterestIcon.svg';
 const Icons = () => {
   return (
     <S.Icons>
-      <img src={Insta} alt="" />
-      <img src={Twitter} alt="" />
-      <img src={Face} alt="" />
-      <img src={Pint} alt="" />
+      <figure>
+        <img src={Insta} alt="" />
+      </figure>
+      <figure>
+        <img src={Twitter} alt="" />
+      </figure>
+      <figure>
+        <img src={Face} alt="" />
+      </figure>
+      <figure>
+        <img src={Pint} alt="" />
+      </figure>
     </S.Icons>
   );
-}
+};
 
-export default Icons
+export default Icons;

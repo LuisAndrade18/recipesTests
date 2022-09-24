@@ -22,6 +22,7 @@ export const Subs = styled.div`
     letter-spacing: 4.2px;
   }
   h4 {
+    text-align: center;
     font-size: 2rem;
     font-family: 'HURME GEOMETRIC T.';
     letter-spacing: 2px;
@@ -84,8 +85,22 @@ export const Icons = styled.div`
   margin-bottom: 30%;
   display: flex;
   justify-content: space-between;
-  img {
+  figure {
     width: 20%;
+  }
+  img {
+    width: 100%;
+  }
+  img:hover {
+    animation: click 0.3s forwards;
+  }
+  @keyframes click {
+    from {
+      width: 100%;
+    }
+    to {
+      width: 90%;
+    }
   }
 `;
 
