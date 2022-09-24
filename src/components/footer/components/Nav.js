@@ -12,7 +12,7 @@ const Nav = () => {
             <li>RECIPES</li>
             <li>SUBSCRIBE</li>
           </ul>
-        </nav>
+      </nav>
       
       <Icons />
     </S.Nav>
