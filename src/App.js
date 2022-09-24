@@ -1,11 +1,17 @@
-import React from "react";
+import React from 'react';
+import Header from './components/header/Header';
+import Main from './components/main/Main';
+import Footer from './components/footer/Footer';
+import * as S from './GlobalStyle/Style'
 
 function App() {
   return (
-    <>
-      <h1>VAMOS FICAR RICO$</h1>
-      <h3>EU ACREDITO</h3>
-    </>
+    <div>
+      <S.GLobalStyle />
+      <Header />
+      <Main />
+      <Footer />
+    </div>
   );
 }
 
