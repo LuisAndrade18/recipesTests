@@ -50,7 +50,7 @@ export const Subs = styled.div`
 `;
 
 export const Nav = styled.div`
-width: 100%;
+  width: 100%;
   font-family: 'HURME GEOMETRIC L.';
   text-align: center;
   display: flex;
@@ -58,7 +58,7 @@ width: 100%;
   align-items: center;
   justify-content: space-around;
   nav{
-    margin: 30% 0 15%; 
+    margin: 30% 0 15%;
   }
   ul {
     width: 100%;
@@ -70,12 +70,14 @@ width: 100%;
   }
   li {
     font-size: 1.5rem;
-    cursor: pointer;
+    
     margin: 15px;
     padding: 5px;
   }
   li:hover {
-    background-color: #eff1ee;
+    cursor: pointer;
+    background-color: #dfe4de;
+    border-radius: 5px;
   }
 `;
 
