@@ -1,15 +1,17 @@
-import React from "react";
-import GlobalStyle from "./theme/GlobalStyle/GlobalStyle";
-import Header from "./components/header/Header";
-import Main from "./components/main/Main";
+import React from 'react';
+import Header from './components/header/Header';
+import Main from './components/main/Main';
+import Footer from './components/footer/Footer';
+import * as S from './GlobalStyle/Style';
 
 function App() {
   return (
-    <>
-      <GlobalStyle />
+    <div>
+      <S.GLobalStyle />
       <Header />
       <Main />
-    </>
+      <Footer />
+    </div>
   );
 }
 
