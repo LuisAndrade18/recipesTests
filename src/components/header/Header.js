@@ -1,12 +1,16 @@
-import React from 'react'
-import * as S from './Style'
+import React from 'react';
+import MenuIcon from '../../assets/icons/menuIcon.png';
+import * as S from './Style.js'
 
-const Header = () => {
+export default function Header() {
   return (
-    <div>
-      <h6>.</h6>
-    </div>
-  )
+    <S.Header>
+      <S.BoxMenuHamburger>
+        <S.MenuHamburger src={MenuIcon} alt='Menu hamburger'/>
+      </S.BoxMenuHamburger>
+      <S.BoxTitle>
+        <S.Title>RECIPES</S.Title>
+      </S.BoxTitle>
+    </S.Header>
+  );
 }
-
-export default Header

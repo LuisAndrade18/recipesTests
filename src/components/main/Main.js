@@ -1,12 +1,11 @@
-import React from 'react';
-import * as S from './Style';
+import React from "react";
+import LatestRecipes from "./components/latestRecipes/LatestRecipes";
+import * as S from "./Style.js";
 
-const Main = () => {
+export default function Main() {
   return (
-    <div>
-      <h6>.</h6>
-    </div>
+    <S.Main>
+      <LatestRecipes />
+    </S.Main>
   );
-};
-
-export default Main;
+}
