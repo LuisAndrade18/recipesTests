@@ -1,11 +1,14 @@
 import React from "react";
+import GlobalStyle from "./theme/GlobalStyle/GlobalStyle";
+import Header from "./components/header/Header";
+import Main from "./components/main/Main";
 
 function App() {
   return (
     <>
-      <h1>VAMOS FICAR RICO$</h1>
-      <h2>mas ainda estamos pobres</h2>
-      <h3>EU ACREDITO!</h3>
+      <GlobalStyle />
+      <Header />
+      <Main />
     </>
   );
 }
