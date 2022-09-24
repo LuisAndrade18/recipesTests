@@ -1,6 +1,6 @@
 import React from 'react';
 import Icons from './Icons';
-import * as S from './Style';
+import * as S from './../Style';
 
 const Nav = () => {
   return (

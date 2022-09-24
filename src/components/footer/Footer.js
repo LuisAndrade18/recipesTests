@@ -1,7 +1,7 @@
 import React from 'react';
-import Subs from './Subs';
-import Nav from './Nav'
-import  Copyrigth from './Copyright';
+import Subs from './components/Subs';
+import Nav from './components/Nav';
+import Copyright from './components/Copyright';
 import * as S from './Style';
 
 const Footer = () => {
@@ -9,7 +9,7 @@ const Footer = () => {
     <S.Footer>
       <Subs />
       <Nav />
-      <Copyrigth/>
+      <Copyright />
     </S.Footer>
   );
 };

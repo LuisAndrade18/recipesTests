@@ -3,7 +3,9 @@ import * as S from './Style'
 
 const Header = () => {
   return (
-    <div>Header</div>
+    <div>
+      <h6>.</h6>
+    </div>
   )
 }
 
