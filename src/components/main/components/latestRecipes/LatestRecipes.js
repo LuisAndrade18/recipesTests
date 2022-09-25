@@ -1,23 +1,20 @@
 import React from "react";
 import * as S from "./Style";
 
-import RedVelvetCakeImg from "../../../../assets/image/redVelvet.png";
-import MargheritaPizzaImg from "../../../../assets/image/pizza.png";
-import PeanutSmoothieImg from "../../../../assets/image/peanut.png";
+import RedVelvetCakeImg from "../../../../assets/images/redVelvet.png";
+import MargheritaPizzaImg from "../../../../assets/images/pizza.png";
+import PeanutSmoothieImg from "../../../../assets/images/peanut.png";
 
 const recipesList = [
   {
-    id: 1,
     image: RedVelvetCakeImg,
     title: "Red Velvet Cake",
   },
   {
-    id: 2,
     image: MargheritaPizzaImg,
     title: "Margherita Pizza",
   },
   {
-    id: 3,
     image: PeanutSmoothieImg,
     title: "Peanut Smoothie",
   },
@@ -31,10 +28,10 @@ const LatestRecipes = () => {
         <S.HorizontalLine></S.HorizontalLine>
       </S.BoxRecipesTitle>
       <S.Card>
-        {recipesList.map((item) => (
-          <figure key={item.id}>
+        {recipesList.map((item, index) => (
+          <figure key={index}>
             <S.RecipeImg src={item.image} alt={item.title} />
-            <span></span>
+            <S.HorizontalLine></S.HorizontalLine>
             <S.RecipeName>{item.title}</S.RecipeName>
           </figure>
         ))}

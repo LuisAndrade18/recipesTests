@@ -1,14 +1,16 @@
 import styled from "styled-components";
-import BackgroundMobile from "../../assets/image/backgroundMobile.png";
+import Background from "../../assets/images/background.png";
 
 export const Header = styled.header`
   height: 53rem;
   margin: 1rem 0.5rem 0.5rem;
   display: flex;
   flex-direction: column;
-  background-image: url(${BackgroundMobile});
+  background-image: url(${Background});
   background-size: cover;
+  background-position: 80%;
   background-repeat: no-repeat;
+  font-family: 'HURME GEOMETRIC';
 `;
 
 export const BoxMenuHamburger = styled.figure`
