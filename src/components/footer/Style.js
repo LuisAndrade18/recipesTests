@@ -9,13 +9,19 @@ export const Footer = styled.div`
 export const Subs = styled.div`
   width: 100%;
   height: 60vh;
-  color: #373737;
   background-color: #dfe4de;
   font-family: 'HURME GEOMETRIC';
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  div {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   h2 {
     font-size: 2rem;
     font-family: 'HURME GEOMETRIC S.B.';
@@ -24,7 +30,7 @@ export const Subs = styled.div`
   h4 {
     text-align: center;
     font-size: 2rem;
-    font-family: 'HURME GEOMETRIC T.';
+    font-family: 'HURME GEOMETRIC L.';
     letter-spacing: 2px;
   }
   input {
@@ -32,10 +38,11 @@ export const Subs = styled.div`
     height: 8vh;
     border: none;
     margin: 16px;
+    background-color: #eff1ee;
   }
   input::placeholder {
     font-size: 18px;
-    font-family: 'HURME GEOMETRIC T.';
+    font-family: 'HURME GEOMETRIC L.';
     padding-left: 20px;
     color: #707070;
   }
@@ -57,12 +64,11 @@ export const Nav = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  nav{
-    margin: 30% 0 15%;
+  nav {
+    margin: 20% 0 10%;
   }
   ul {
     width: 100%;
-    color: #373737;
     letter-spacing: 2.52px;
     display: flex;
     flex-direction: column;
@@ -70,7 +76,6 @@ export const Nav = styled.div`
   }
   li {
     font-size: 1.5rem;
-    
     margin: 15px;
     padding: 5px;
   }

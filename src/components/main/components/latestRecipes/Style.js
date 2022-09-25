@@ -15,13 +15,15 @@ export const RecipesTitle = styled.h2 `
 `
 
 export const HorizontalLine = styled.span `
-    width: 6.5rem;
+    width: 4.5rem;
     height: .3rem;
     display: inline-block;
     background-color: #373737;
 `
 
 export const Card = styled.div `
+width: 90%;
+margin: auto;
     background-color: #FFFFFF;
 `
 
