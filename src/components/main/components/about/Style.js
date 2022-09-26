@@ -24,11 +24,16 @@ export const About = styled.div`
   @media (min-width: 1000px) {
     flex-direction: row;
     justify-content: space-between;
+    img{
+      width: 50%;
+    }
     figure {
       width: 50%;
     }
-    p{
+    p {
       width: 65%;
+      font-size: 1vw;
+      max-width: none;
     }
   }
 `;
