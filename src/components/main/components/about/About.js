@@ -5,9 +5,7 @@ import * as S from './Style';
 const About = () => {
   return (
     <S.About>
-      <figure>
         <img src={Spoon} alt="" />
-      </figure>
       <S.Text>
         <div>
           <h2>ABOUT</h2>
