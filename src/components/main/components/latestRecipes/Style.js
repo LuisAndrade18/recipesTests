@@ -2,11 +2,13 @@ import styled from "styled-components";
 
 export const Container = styled.section `
     text-align: center;
+    padding: 1.5rem 1rem;
 `
 
 export const BoxRecipesTitle = styled.div`
     margin: 2.9rem;
 `
+
 export const RecipesTitle = styled.h2 `
     font-size: 2rem;
     letter-spacing: .1rem;
@@ -21,18 +23,24 @@ export const HorizontalLine = styled.span `
     background-color: #373737;
 `
 
-export const Card = styled.div `
-width: 90%;
-margin: auto;
+export const HorizontalLineCard = styled(HorizontalLine) `
+    width: 3.1rem;
+    margin: 7.1rem 0 .7rem;
+`
+
+export const BoxCard = styled.div `
     background-color: #FFFFFF;
 `
 
-export const BoxImage = styled.figure `
-
+export const Card = styled.figure `
+    margin-bottom: .9rem;
+    padding-bottom: 7rem;
+    box-shadow: 0px 7px 6px #00000029;
 `
 export const RecipeImg = styled.img `
     width: 100%;
 `
-export const RecipeName = styled.figcaption `
+export const RecipeTitle = styled.figcaption `
     font-size: 2rem;
+    line-height: 2.5rem;
 `

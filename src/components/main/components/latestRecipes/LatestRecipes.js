@@ -7,14 +7,17 @@ import PeanutSmoothieImg from "../../../../assets/images/peanut.png";
 
 const recipesList = [
   {
+    id: 1,
     image: RedVelvetCakeImg,
     title: "Red Velvet Cake",
   },
   {
+    id: 2,
     image: MargheritaPizzaImg,
     title: "Margherita Pizza",
   },
   {
+    id: 3,
     image: PeanutSmoothieImg,
     title: "Peanut Smoothie",
   },
@@ -27,15 +30,15 @@ const LatestRecipes = () => {
         <S.RecipesTitle>LATEST RECIPES</S.RecipesTitle>
         <S.HorizontalLine></S.HorizontalLine>
       </S.BoxRecipesTitle>
-      <S.Card>
-        {recipesList.map((item, index) => (
-          <figure key={index}>
+      <S.BoxCard>
+        {recipesList.map((item) => (
+          <S.Card key={item.id}>
             <S.RecipeImg src={item.image} alt={item.title} />
-            <S.HorizontalLine></S.HorizontalLine>
-            <S.RecipeName>{item.title}</S.RecipeName>
-          </figure>
+            <S.HorizontalLineCard></S.HorizontalLineCard>
+            <S.RecipeTitle>{item.title}</S.RecipeTitle>
+          </S.Card>
         ))}
-      </S.Card>
+      </S.BoxCard>
     </S.Container>
   );
 };
