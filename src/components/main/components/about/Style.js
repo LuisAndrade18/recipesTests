@@ -16,9 +16,20 @@ export const About = styled.div`
   }
   p {
     width: 94%;
-    max-width: 600px;
+    max-width: 500px;
     font-size: 1.2rem;
     text-align: left;
+  }
+
+  @media (min-width: 1000px) {
+    flex-direction: row;
+    justify-content: space-between;
+    figure {
+      width: 50%;
+    }
+    p{
+      width: 65%;
+    }
   }
 `;
 
@@ -35,6 +46,11 @@ export const Text = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+  }
+
+  @media (min-width: 1000px) {
+    width: 50%;
+    height: 100%;
   }
 `;
 

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Footer = styled.div`
+export const Footer = styled.footer`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,14 +9,22 @@ export const Footer = styled.div`
 export const Subs = styled.div`
   width: 100%;
   height: 60vh;
+  min-height: 400px;
   background-color: #dfe4de;
   font-family: 'HURME GEOMETRIC';
   display: flex;
   align-items: center;
   justify-content: center;
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   div {
     width: 100%;
-    max-width: 700px;
+    max-width: 650px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,7 +43,9 @@ export const Subs = styled.div`
   }
   input {
     width: 95%;
-    height: 8vh;
+    height: 8.5vh;
+    min-height: 80px;
+    padding-left: 20px;
     border: none;
     margin: 16px;
     background-color: #eff1ee;
@@ -43,16 +53,24 @@ export const Subs = styled.div`
   input::placeholder {
     font-size: 18px;
     font-family: 'HURME GEOMETRIC L.';
-    padding-left: 20px;
     color: #707070;
   }
   button {
     width: 95%;
+    max-width: 420px;
     height: 9vh;
+    min-height: 80px;
     letter-spacing: 6px;
     font-size: 1.2rem;
     background: none;
     border: solid 6px #373737;
+    cursor: pointer;
+  }
+
+  @media (min-width: 770px) {
+    button {
+      width: 30%;
+    }
   }
 `;
 
@@ -84,6 +102,30 @@ export const Nav = styled.div`
     background-color: #dfe4de;
     border-radius: 5px;
   }
+
+  @media (min-width: 770px) {
+    nav {
+      margin: 10% 0 5%;
+    }
+  }
+  @media (min-width: 1000px) {
+    height: 35vh;
+    min-height: 330px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+
+    nav {
+      width: 600px;
+      margin: 10% 5%;
+    }
+    ul {
+      flex-direction: row;
+    }
+    li{
+      margin: 0;
+    }
+  }
 `;
 
 export const Icons = styled.div`
@@ -109,6 +151,17 @@ export const Icons = styled.div`
       width: 90%;
     }
   }
+
+  @media (min-width: 770px) {
+    margin-bottom: 10%;
+  }
+
+  @media (min-width: 1000px) {
+    width: 20%;
+    max-width: 300px;
+    margin-bottom: 0;
+    margin-left: 5%;
+  }
 `;
 
 export const Copyrigth = styled.div`
@@ -124,4 +177,10 @@ export const Copyrigth = styled.div`
     font-size: 0.52rem;
     word-break: break-all;
   }
+
+  @media (min-width: 770px){
+    font-size: 1.5rem;
+    text-align: center;
+  }
 `;
+
