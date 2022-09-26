@@ -178,9 +178,16 @@ export const Copyrigth = styled.div`
     word-break: break-all;
   }
 
-  @media (min-width: 770px){
-    font-size: 1.5rem;
-    text-align: center;
+  @media (min-width: 770px) {
+    div {
+      font-size: 0.6rem;
+      text-align: center;
+    }
+  }
+  @media (min-width: 1000px) {
+    div {
+      font-size: .8vw;
+      text-align: center;
+    }
   }
 `;
-
