@@ -1,7 +1,8 @@
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 
 export const About = styled.div`
   width: 100%;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,9 +12,6 @@ export const About = styled.div`
     font-family: 'HURME GEOMETRIC S.B.';
     letter-spacing: 1.5px;
   }
-  img {
-    width: 100%;
-  }
   p {
     width: 94%;
     max-width: 500px;
@@ -22,25 +20,39 @@ export const About = styled.div`
   }
 
   @media (min-width: 1000px) {
+    height: 50vw;
     flex-direction: row;
     justify-content: space-between;
-    img{
-      width: 50%;
-    }
-    figure {
-      width: 50%;
+    h2 {
+      font-size: 2rem;
     }
     p {
-      width: 65%;
-      font-size: 1vw;
+      width: 63%;
+      font-size: 1.1vw;
       max-width: none;
     }
   }
 `;
 
+export const Image = styled.figure`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media (min-width: 1000px) {
+    width: 50%;
+  }
+`;
+
 export const Text = styled.div`
   height: 100vh;
-  max-height: 700px;
+  margin-top: 20px;
+  max-height: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,13 +67,14 @@ export const Text = styled.div`
 
   @media (min-width: 1000px) {
     width: 50%;
-    height: 100%;
+    height: 60%;
   }
 `;
 
 export const Line = styled.span`
   width: 45%;
-  height: 0;
+  height: 0px;
+  background-color: #373737;
   max-width: 90px;
-  border: solid 4px;
+  border: solid 2px;
 `;

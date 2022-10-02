@@ -4,8 +4,10 @@ import * as S from './Style';
 
 const About = () => {
   return (
-    <S.About>
+    <S.About id='About'>
+      <S.Image>
         <img src={Spoon} alt="" />
+      </S.Image>
       <S.Text>
         <div>
           <h2>ABOUT</h2>

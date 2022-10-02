@@ -15,25 +15,25 @@ const Subs = () => {
     if (!email) {
       Swal.fire({
         icon: 'info',
-        title: 'Atenção!',
+        title: 'Atenção:',
         text: 'É necessario preencher o campo!',
         showConfirmButton: false,
         timer: 2000,
       });
     } else if (validator.isEmail(email)) {
       Swal.fire({
-        title: 'Bem Vindo(a)!',
+        title: 'Bem Vindo(a):',
         text: 'Newsletter agradece sua inscrição!',
         imageUrl: `${welcome}`,
         imageHeight: 200,
         showConfirmButton: false,
-        timer: 2000,
+        timer: 4000,
       });
       setEmail('');
     } else {
       Swal.fire({
         icon: 'question',
-        title: 'Não foi possível reconhecer.',
+        title: 'Não foi possível reconhecer:',
         text: 'Use um email valido.',
         showConfirmButton: false,
         timer: 2000,
@@ -41,7 +41,7 @@ const Subs = () => {
     }
   };
   return (
-    <S.Subs>
+    <S.Subs id='Subs'>
       <div>
         <h2>SUBSCRIBE</h2>
         <h4>Sign up for newsletter</h4>
